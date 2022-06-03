@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.example.flixster.databinding.ActivityMainBinding;
 import com.example.flixster.models.Movie;
 
 import org.parceler.Parcels;
@@ -20,7 +18,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
     // the movie to display
     Movie movie;
-    private ActivityMainBinding binding;
+
     // the view objects
     TextView tvTitle;
     TextView tvOverview;
@@ -30,16 +28,9 @@ public class MovieDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // activity_simple.xml -> ActivitySimpleBinding
-        //binding = ActivityMainBinding.inflate(getLayoutInflater());
+
         setContentView(R.layout.activity_movie_details);
-        /*// layout of activity is stored in a special property called root
-        View view = binding.getRoot();
-        setContentView(view);
-
         // resolve the view objects
-        tvTitle = binding.tvTitle;*/
-
         tvTitle = (TextView) findViewById(R.id.tvTitle);
         tvOverview = (TextView) findViewById(R.id.tvOverview);
         rbVoteAverage = (RatingBar) findViewById(R.id.rbVoteAverage);

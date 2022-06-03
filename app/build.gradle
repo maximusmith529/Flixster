@@ -5,9 +5,7 @@ plugins {
 android {
     compileSdk 32
 
-    buildFeatures {
-        viewBinding true
-    }
+
 
     defaultConfig {
         applicationId "com.example.flixster"
@@ -18,7 +16,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        viewBinding true
+    }
     buildTypes {
         release {
             minifyEnabled false

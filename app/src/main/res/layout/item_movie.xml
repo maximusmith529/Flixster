@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/tvPoster"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
         tools:ignore="ImageContrastCheck"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -24,6 +24,7 @@
         android:background="#373737"
         android:textColor="#C1C1C1"
         android:textSize="12sp"
+        tools:layout_margin="3dp"
         tools:text="A Spinoff of the fate andthe furious focsing on johnsons us dplicmatic serccurtyy angrent and luke hobbs forming na unlikely alliance with strathan deckard shaw" />
 
     <TextView
@@ -35,7 +36,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="121dp"
         android:layout_marginTop="-1dp"
-        android:layout_toEndOf="@+id/tvPoster"
+        android:layout_toEndOf="@id/tvPoster"
         android:background="#303030"
         android:textColor="@android:color/white"
         android:textSize="20sp"
