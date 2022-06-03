@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#373737">
+
+    <ImageView
+        android:id="@+id/tvPoster"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/tvPoster"
+        android:background="#373737"
+        android:textColor="#C1C1C1"
+        android:textSize="12sp"
+        tools:text="A Spinoff of the fate andthe furious focsing on johnsons us dplicmatic serccurtyy angrent and luke hobbs forming na unlikely alliance with strathan deckard shaw" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@+id/tvPoster"
+        android:background="#303030"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:text="Fast and the Furious Presents: Hobbs n Shaw" />
+</RelativeLayout>
